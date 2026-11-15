@@ -4,7 +4,7 @@ import secrets
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 
-app = FastAPI(title="Story Knowledge Graph API")
+app = FastAPI(title="Foo Bar Buzz")
 
 bearer_scheme = HTTPBearer(auto_error=False)
 
