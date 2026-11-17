@@ -32,7 +32,7 @@ jobs:
         run: python -m compileall -q app tests
 
       - name: Run tests
-        run: pytest -v
+        run: python -m pytest -vvv
 
       - name: Create deployment ZIP
         run: |
