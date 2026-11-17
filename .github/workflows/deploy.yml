@@ -25,8 +25,14 @@ jobs:
         with:
           python-version: '3.13'
 
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
       - name: Check Python syntax
-        run: python -m compileall -q app
+        run: python -m compileall -q app tests
+
+      - name: Run tests
+        run: pytest -v
 
       - name: Create deployment ZIP
         run: |
